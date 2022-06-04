@@ -1,0 +1,32 @@
+body::before {
+    display: block;
+    content: "";
+    height: 90px;
+
+}
+
+.txt-color:hover {
+    color: White !important;
+}
+
+.news-section .news-btn:hover {
+    color: #0dcaf0 !important;
+
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+@media(min-width:768px) {
+    .news-input {
+        width: 50%;
+    }
+}
