@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400;500;600&family=Jost&family=Lato&family=Noto+Serif+Kannada:wght@100&family=Open+Sans:ital,wght@0,400;1,700&family=Palette+Mosaic&family=Playfair+Display:ital@1&family=Poppins:wght@300;400;500;600;700;800;900&family=Quicksand&family=Roboto+Mono:ital,wght@0,600;0,700;1,600;1,700&family=Roboto+Slab:wght@300;400;500;600&family=Roboto:wght@300&display=swap');
+
+:root {
+    --pri-color: #0d6efd;
+    --black-color: #000;
+    --White-colo: #fff;
+    --pri-hover: #033176;
+    --bg-light-white: #f5f5f5;
+
+    /* Text color  */
+    --primary-font: "poppins", sans-serif;
+    --text-white: #fff;
+    --text-black: #000;
+
+    --text-grey: #aaa;
+    --text-dark-grey: #777;
+
+
+
+}
+
+* {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+
+/* navbar styling  */
+
+.navbar {
+    background-color: var(--White-colo);
+}
+
+.navbar .nav-logo {
+    margin-left: 50px;
+}
+
+.nav-a {
+    font-size: 1.2rem !important;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.nav-a:hover {
+    color: var(--pri-color) !important;
+}
+
+.nav-aa:hover {
+    color: var(--pri-color);
+}
+
+
+.header .dropdown-menu {
+    min-width: 13rem;
+    padding: 1.5rem 0;
+    border: 0.2rem solid var(--pri-color);
+}
+
+.header .dropdown-items {
+    line-height: 1.3;
+    padding: 1rem;
+    font-size: 1.35rem;
+    font-weight: 600;
+
+}
+
+
+
+/* Banner section  */
+.home-banner-1,
+.home-banner-2,
+.home-banner-3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% center;
+    min-height: 650px;
+    position: relative;
+}
+
+.home-banner-1 {
+    background-image: url('../Images/truck.jpg');
+}
+
+.home-banner-2 {
+    background-image: url('../Images/plane.jpg');
+}
+
+.home-banner-3 {
+    background-image: url('../Images/ship.jpg');
+
+}
+
+.home-banner-3 .bn,
+.home-banner-1 .bn,
+.home-banner-2 .bn {
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 650px;
+    color: #fff;
+}
+
+.Sp {
+    color: var(--pri-color);
+}
+
+.h1ref {
+    padding-top: 220px;
+    padding-left: 550px;
+    font-size: 80px;
+    animation: anime 2s forwards ease-in-out;
+    transition: 10s;
+    position: relative;
+}
+
+@keyframes anime {
+    0% {
+        top: 200px;
+
+    }
+
+    100% {
+        top: 0px;
+
+    }
+}
+
+.h3ref {
+    padding-top: 10px;
+    padding-left: 230px;
+    font-size: 40px;
+    animation: anime 2s forwards ease-in-out;
+    transition: 10s;
+    position: relative;
+}
+
+.h4ref {
+    padding-top: 220px;
+    padding-left: 180px;
+    font-size: 40px;
+    animation: animate 4s forwards ease-in-out;
+    transition: 10s;
+    position: relative;
+}
+
+@keyframes animate {
+    0% {
+        left: 100%;
+
+    }
+
+    50% {
+        left: 0%;
+    }
+}
+
+/* About section styling  */
+
+.about-a {
+    text-decoration: none;
+
+}
+
+.about-btn {
+    border-radius: 30px !important;
+}
+
+.about-btn:hover {
+    background-color: var(--pri-hover);
+    color: #000;
+}
+
+.about-img:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: 2s;
+}
+
+.About-H1 {
+    margin: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+
+/* about page styling  */
+.about-page .about-h5 {
+    word-spacing: 3px;
+    line-height: 50px;
+    margin: 20px;
+
+}
+
+.about-page .about-img4 {
+    /* background-image: url('https: //randomuser.me/api/portraits/men/10.jpg'); */
+    height: 400px;
+}
+
+.about-page .about-img5 {
+    /* background-image: url('https: //randomuser.me/api/portraits/men/10.jpg'); */
+    height: 400px;
+    margin-right: 170px;
+}
+
+
+.about-black-card-r {
+
+    position: absolute;
+    top: 20%;
+    left: -650px;
+    bottom: 0;
+    width: calc(100%-80%);
+    /* box-shadow: ; */
+    background-color: var(--black-color);
+    padding: 2.5rem;
+    text-align: left;
+    z-index: 1;
+    color: var(--White-colo);
+    border-radius: 25px;
+
+}
+
+.about-black-card-s {
+    position: absolute;
+    top: 25%;
+    right: -500px;
+    width: calc(100%-60%);
+    /* box-shadow: ; */
+    background-color: var(--black-color);
+    padding: 2.5rem;
+    text-align: left;
+    z-index: 1;
+    color: var(--White-colo);
+    border-radius: 25px;
+}
+
+/* service styling  */
+.sec-title {
+
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.parallax {
+    position: relative;
+    background-position: left;
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.parallax-1 {
+    position: relative;
+    background-position: right;
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.parallax-main {
+    position: relative;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.parallax.img1 {
+    background-image: url(../Images/banner/Banner-1.jpg);
+    height: 100%;
+}
+
+.parallax.img2 {
+    background-image: url(../Images/services/Door\ to\ door.png);
+    height: 608px;
+}
+
+.parallax.img3 {
+    background-image: url(../Images/services/Door\ to\ Airport.png);
+    height: 608px;
+}
+
+.parallax.img4 {
+    background-image: url(../Images/services/Airport\ to\ door.jpg);
+    height: 558px;
+}
+
+.parallax.img5 {
+    background-image: url(../Images/services/Counter\ to\ Counter.png);
+    height: 750px;
+}
+
+.main-wrapper {
+    margin-top: 80vh;
+    background-color: #fff;
+    width: 100%;
+}
+
+.main-wrapper .black-card {
+    position: absolute;
+    top: 25%;
+    right: -500px;
+    width: calc(100%-60%);
+    /* box-shadow: ; */
+    background-color: var(--black-color);
+    padding: 2.5rem;
+    text-align: left;
+    z-index: 1;
+    color: var(--White-colo);
+    border-radius: 25px;
+}
+
+.main-wrapper .black-card1 {
+    position: absolute;
+    top: 25%;
+    left: -650px;
+    width: calc(100%-60%);
+    /* box-shadow: ; */
+    background-color: var(--black-color);
+    padding: 2.5rem;
+    text-align: left;
+    z-index: 1;
+    color: var(--White-colo);
+    border-radius: 25px;
+}
+
+.view-link {
+    text-decoration: none;
+}
+
+.view-link:hover {
+    transform: scale(0.96);
+    transition: 0.8s;
+    color: var(--White-colo);
+}
+
+.tr {
+    box-shadow: 0 0 20px 2px var(--black-color);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.tra {
+    margin-left: 100px;
+}
+
+
+
+.trans {
+    padding-top: 70px !important;
+    margin: 20px auto;
+}
+
+
+
+/* testimonial styling  */
+.testimonial {
+    padding: 5rem 0 8rem;
+
+}
+
+.testimonial .testimonial-wrapper {
+    box-shadow: 0 0 0.563rem 0 rgb(0 0 0 / 5%);
+    background: var(--bg-white);
+    margin: auto;
+    padding: 1rem 5rem;
+    border: 0.063rem solid var(--bg-light-white);
+    border-radius: 0.625rem;
+
+}
+
+.testimonial .testimonial-wrapper .username {
+    padding: 1rem;
+    font-size: 500;
+
+}
+
+.testimonial .testimonial-wrapper img {
+    border-radius: 100%;
+}
+
+.testimonial .testimonial-wrapper h3 {
+    font-size: 2rem;
+}
+
+.testimonial .testimonial-wrapper span {
+    color: var(--text-grey);
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    display: block;
+}
+
+.testimonial .testimonial-wrapper p {
+    color: var(--text-dark-grey);
+    font-size: 0.875rem;
+}
+
+
+/* styling of reviews  */
+
+.test-wrapper {
+    box-shadow: 0 0 20px 2px black;
+    width: 80%;
+    margin: 80px auto;
+    padding: 50px;
+    color: #fff;
+    background-color: black;
+}
+
+
+
+.test-wrapper .card {
+    margin-top: 0px;
+    border: 2px solid black;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+
+
+}
+
+.test-wrapper .card i {
+    color: rgb(255, 191, 0);
+    font-size: 1.4rem;
+}
+
+.test-wrapper .card p {
+    color: var(--black-color);
+}
+
+.test-wrapper .card h5 {
+    font-weight: 700;
+    color: var(--black-color);
+}
+
+.test-wrapper .carousel-indicators {
+    margin-bottom: -3rem;
+
+}
+
+.test-wrapper .carousel-indicators button {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: var(--bg-light-white);
+}
+
+
+/* footer  */
+
+.footer-wrapper {
+    background-color: #000;
+    padding-bottom: 0rem;
+
+}
+
+.footer-wrapper .footer-logo img {
+    object-fit: cover;
+}
+
+.footer-wrapper .foot-h5 {
+    color: var(--White-colo);
+    margin-top: 5rem;
+}
+
+.footer-wrapper .foot-h5 a {
+    text-decoration: none;
+    color: var(--White-colo);
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+.footer-wrapper ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.footer-wrapper ul li {
+    margin-right: 1.5rem;
+}
+
+.footer-wrapper .copyright-section p {
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--White-colo);
+}
+
+/* whatsapp styling  */
+.whatsapp-icon {
+    position: relative;
+
+}
+
+.whatsapp-icon .whatsapp {
+    position: fixed;
+    width: 6rem;
+    z-index: 1;
+    bottom: 1rem;
+    right: 0.5rem;
+}
+
+.whatsapp-icon .whatsapp img {
+    width: 3rem;
+}
+
+
+/* Service page styling  */
+.parallax.service-img1 {
+    background-image: url('../Images/Service-banner.jpg');
+
+    width: 100%;
+    height: 100%;
+}
+
+/* Clients section  */
+
+.clients-card {
+    border: none;
+    padding: 30px;
+    margin: 50px;
+}
+
+.clients-card .client-img1 {
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.contact-form {
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+.contact-main-container .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+.contact-cards {
+    margin: 20px;
+}
