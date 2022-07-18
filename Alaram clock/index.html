@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<style>
+    #clock {
+            width: 15%;
+            margin: 20px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 90px;
+            margin-top: -48px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            
+        #btn{
+            width: 90px;
+            height: 40px;
+            cursor: pointer;
+            text-align: center;
+        }           
+</style>
+</head>
+<body >
+    <div class="container my-3">
+        <h1>Alarm</h1>
+        <form>
+            <div class="mb-3">
+              <label  class="form-label">Set Alarm</label> <br>
+              <input type="text" id="alarm" name="alarm" placeholder="mm-dd-yyyy  hh:mm:ss"> 
+              
+              <div id="alarmHelp" class="form-text">Enter date(mm-dd-yyyy) and time(hh:mm:ss) in this format.</div>
+            </div>
+            <button id="setalarm"  type="submit" class="btn btn-primary">Set Alarm</button>
+            <div id="clock" >
+                <div>
+                    <button  id="btn" class="btn btn-primary" onclick="updateClock(); setInterval('updateClock()',1000)">Time </button>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+
+    
+            
+            
+
+    <script src="alarm.js"></script>
+    <script src="clock.js"></script>
+</body>
+</html>
