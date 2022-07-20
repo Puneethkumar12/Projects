@@ -1,0 +1,47 @@
+:root {
+    --primary-colour: #0079FF;
+    --background-colour: #141d2f;
+    --content-background: #1e2a47;
+    --input-placeholder: #ffffff;
+    --mode-colour: #fff;
+    --number-colour: #fff;
+    --text-colour: #fff;
+}
+
+.moon-icon {
+    display: none;
+}
+
+.sun-icon {
+    display: inline-block;
+    position: relative;
+    right: 18px;
+    top: 4px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.color-mode small::after {
+    content: 'light';
+}
+
+.color-mode small:hover {
+    color: #90a4d4;
+}
+
+.color-mode .sun-icon path:hover {
+    fill: #90a4d4;
+}
+
+.search-bar,
+.github-user {
+    box-shadow: none;
+}
+
+.github-profile .profile h1 {
+    color: var(--text-colour);
+}
+
+.social-link a svg path {
+    fill: var(--text-colour);
+}
